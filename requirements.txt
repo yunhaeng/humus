@@ -1,0 +1,7 @@
+streamlit
+openai
+PyMuPDF
+langchain
+langchain_community
+pandas
+pypdf
