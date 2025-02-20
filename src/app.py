@@ -5,6 +5,7 @@ from openai import AssistantEventHandler, OpenAI
 import prompt_templates
 
 # Load OpenAI API key from environment variable
+os.env["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Initialize OpenAI API client
