@@ -62,13 +62,13 @@ def main():
         st.session_state.messages = [{"role": "assistant", "content":prompt_templates.greeting_prompt}]
     # Display chat messages
     for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
+        with st.chat_message(message["role"], avatar="tason_icon.png"):
             st.write(message["content"])
 
     # User-provided prompt
     if prompt := st.chat_input():
         st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user", avatar="data/tason_icon.png"):
+        with st.chat_message("user"):
             st.write(prompt)
             
     # Generate a new response if last message is not from assistant
