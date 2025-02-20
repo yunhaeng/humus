@@ -68,7 +68,7 @@ def main():
     # User-provided prompt
     if prompt := st.chat_input():
         st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
+        with st.chat_message("user", avatar="data/tason_icon.png"):
             st.write(prompt)
             
     # Generate a new response if last message is not from assistant
