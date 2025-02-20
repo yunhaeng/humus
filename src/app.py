@@ -4,7 +4,6 @@ from typing_extensions import override
 from openai import AssistantEventHandler, OpenAI
 import prompt_templates
 
-os.environ["OPENAI_API_KEY"] = "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"
 # Load OpenAI API key from environment variable
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
