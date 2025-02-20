@@ -62,7 +62,7 @@ def main():
         st.session_state.messages = [{"role": "assistant", "content":prompt_templates.greeting_prompt}]
     # Display chat messages
     for message in st.session_state.messages:
-        with st.chat_message(message["role"], avatar="tason_icon.png"):
+        with st.chat_message(message["role"], avatar="data/tason_icon.png"):
             st.write(message["content"])
 
     # User-provided prompt
